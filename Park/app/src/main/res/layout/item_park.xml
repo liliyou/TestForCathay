@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/park_item_height"
+    android:paddingLeft="10dp">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+
+    <ImageView
+        android:id="@+id/image_park"
+        android:layout_width="@dimen/park_image_height"
+        android:layout_height="@dimen/park_image_height"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        tool:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textview_park_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_park"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/image_park"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="@string/park_title"
+        android:textColor="@color/park_title"
+        android:textSize="@dimen/park_title" />
+
+    <TextView
+        android:id="@+id/textview_park_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_park"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image_park"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/park_info"
+        android:textSize="@dimen/park_info"
+        tool:text="@string/park_info" />
+
+</RelativeLayout>
+
+
+

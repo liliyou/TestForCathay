@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="park_title">17sp</dimen>
+    <dimen name="park_info">16sp</dimen>
+
+    <dimen name="park_item_height">110dp</dimen>
+    <dimen name="park_image_height">90dp</dimen>
+
+
+</resources>

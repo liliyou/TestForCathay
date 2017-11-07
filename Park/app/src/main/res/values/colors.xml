@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="aluminum">#9A9A9A</color>
+
+    <color name="line">#F2F2F2</color>
+    <color name="park_title">@android:color/black</color>
+    <color name="park_info">@color/aluminum</color>
 </resources>
