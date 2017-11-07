@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Park</string>
+    <string name="park_title">二二八和平公園</string>
+    <string name="park_info">六月雪</string>
 </resources>
