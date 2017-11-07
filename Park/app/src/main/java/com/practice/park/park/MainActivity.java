@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.crashlytics.android.Crashlytics;
 import com.practice.park.park.api.Park.ParkInfo;
 
+import io.fabric.sdk.android.Fabric;
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -29,10 +31,10 @@ public class MainActivity extends AppCompatActivity implements IMain {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    Fabric.with(this, new Crashlytics());
     setContentView(R.layout.activity_main);
     ButterKnife.bind(this);
     initView();
-//    mainPresenter.loadParkList(scope, rid);
   }
 
   private void initView() {
